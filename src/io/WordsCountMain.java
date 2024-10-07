@@ -80,7 +80,10 @@ public class WordsCountMain{
         // Print out the keys set in alphabetical order
         for (String word: uniqueWords.keySet()){
             System.out.printf("%s = %d\n", word, uniqueWords.get(word));
+            bufferedWriter.write(word + " = " + uniqueWords.get(word) + "\n");
         }
+
+        bufferedWriter.close();
 
     }
 

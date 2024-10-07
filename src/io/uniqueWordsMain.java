@@ -45,7 +45,7 @@ public class uniqueWordsMain{
             for (String word: transformed.split(" ")){
                 uniqueWords.add(word);
             }
-            //  String[] words = transformed.split(" ");
+            //  String[] words = transformed.split(" ")
             writer.flush();
         }
 
@@ -56,7 +56,10 @@ public class uniqueWordsMain{
 
         for (String word: uniqueWords){
             System.out.printf("%s, ", word);
+            bufferedWriter.write(word + "\n");
         }
+
+        bufferedWriter.close();
 
         System.out.println();
 
