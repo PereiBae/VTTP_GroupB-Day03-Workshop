@@ -26,6 +26,8 @@ public class IOWorkshop {
             //Convert the line to uppercase
             String upperCaseLine = line.toUpperCase();
         }
+        bufferedReader.close();
+        bufferedWriter.close();
 
     }
 

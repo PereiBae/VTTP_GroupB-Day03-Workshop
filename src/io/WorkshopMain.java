@@ -46,7 +46,7 @@ public class WorkshopMain {
             switch(cmd.toUpperCase()){
                 
                 case "LOGIN":
-                if (terms[1].isEmpty()){
+                if (terms.length == 1){
                     System.out.println("Please enter name");
                 } else{
                     customer = terms[1];
